@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>
+         Python Automation Framework for TwinCAT HMI | Project Portfolio
+      </title>
+      <meta
+         name="description"
+         content="Project portfolio for a Python automation framework that generates TwinCAT HMI content, ADS bindings, reusable User Controls, dashboards, and I/O mappings from PLC project data."
+      />
+      <link rel="stylesheet" href="assets/styles.css" />
+   </head>
+
+   <body>
+      <header class="hero" id="top">
+         <nav class="nav" aria-label="Main navigation">
+            <div class="nav-links">
+               <a href="#demo">Demo</a>
+               <a href="#overview">Overview</a>
+               <a href="#functions">Core Modules</a>
+               <a href="#architecture">Architecture</a>
+               <a href="#twincat">TwinCAT / Python</a>
+               <a href="#highlights">Highlights</a>
+               <a href="#experience">Professional Experience</a>
+               <a href="#digital-twin">Digital Twin</a>
+               <a href="#pickline">PickLine</a>
+            </div>
+         </nav>
+         <section class="hero-content">
+            <p class="eyebrow">
+               Python · TwinCAT HMI · TwinCAT PLC · ADS Mapping · Virtual
+               Commissioning
+            </p>
+            <h1>
+               Python Tool for BMW Virtual Commissioning with Unity &amp;
+               TwinCAT
+            </h1>
+            <p class="hero-text">
+               A Python automation framework that generates TwinCAT HMI assets,
+               ADS bindings, dashboards, and reusable User Controls directly
+               from PLC project data, improving consistency, reducing
+               engineering effort, and minimizing manual errors.
+            </p>
+            <div class="hero-actions">
+               <a class="button primary" href="#demo">Watch Demo</a>
+               <a class="button secondary" href="mailto:kevinjing@icloud.com"
+                  >Contact Xiaobo Jing</a
+               >
+            </div>
+            <div class="hero-stats" aria-label="Project highlights">
+               <div class="stat">
+                  <strong>Three</strong><span>Core Python modules</span>
+               </div>
+               <div class="stat">
+                  <strong>ADS</strong
+                  ><span>PLC symbol final-value binding workflow</span>
+               </div>
+               <div class="stat">
+                  <strong>TwinCAT</strong
+                  ><span
+                     >Content, Desktop with JSTree, User Controls, PLCopenXML
+                  </span>
+               </div>
+               <div class="stat">
+                  <strong>Unity</strong
+                  ><span>Prefabs, 3D modules, Pixyz, Open Commissioning </span
+                  >&nbsp;
+               </div>
+            </div>
+         </section>
+      </header>
+      <main>
+         <section id="demo" class="section demo-section">
+            <div class="section-heading centered">
+               <p class="eyebrow">Project Demonstration</p>
+               <h2>Project Demonstration</h2>
+               <p>
+                  Demonstration of the Python automation framework for TwinCAT
+                  HMI engineering, including User Controls generation, HMI
+                  content creation, ADS binding generation, and automated I/O
+                  address mapping.
+               </p>
+            </div>
+
+            <div class="demo-layout">
+               <div class="demo-videos">
+                  <div class="demo-video panel">
+                     <h3>HMI Tool Demo</h3>
+                     <video
+                        class="demo-video-player"
+                        controls
+                        preload="metadata"
+                     >
+                        <source src="assets/demo_1.mp4" type="video/mp4" />
+                     </video>
+                  </div>
+
+                  <div class="demo-video panel">
+                     <h3>
+                        Generated TwinCAT HMI project served on the HMI server&nbsp;
+                     </h3>
+                     <video
+                        class="demo-video-player"
+                        controls
+                        preload="metadata"
+                     >
+                        <source src="assets/demo_2.mp4" type="video/mp4" />
+                     </video>
+                  </div>
+               </div>
+
+               <div class="demo-text panel">
+                  <h3>Automation Workflow</h3>
+                  <ol class="timeline">
+                     <li>Select an automation function.</li>
+                     <li>Parse PLC project structures and PLCopenXML files.</li>
+                     <li>
+                        Validate HMI project folders, PLC paths, and required
+                        files.
+                     </li>
+                     <li>
+                        Generate HMI content, User Controls, ADS bindings, and
+                        localization files.
+                     </li>
+                     <li>
+                        Assemble the generated assets into the TwinCAT HMI
+                        project structure.
+                     </li>
+                     <li>
+                        Generate structured I/O mappings from exported Excel
+                        files.
+                     </li>
+                  </ol>
+               </div>
+            </div>
+         </section>
+
+         <section id="overview" class="section grid-2">
+            <div>
+               <p class="eyebrow">Project Overview</p>
+               <h2>Python Automation Framework for HMI</h2>
+               <div class="meta-grid">
+                  <div class="meta-item">
+                     <span>Domain</span
+                     ><strong>Beckhoff TwinCAT PLC & HMI</strong>
+                  </div>
+                  <div class="meta-item">
+                     <span>Core technology</span
+                     ><strong>Python, TwinCAT 3, JSTree, ADS, Unity</strong>
+                  </div>
+                  <div class="meta-item">
+                     <span>Key Outcome</span
+                     ><strong
+                        >Reusable HMI User Controls and ADS-mapped
+                        content</strong
+                     >
+                  </div>
+                  <div class="meta-item">
+                     <span>Primary Application</span
+                     ><strong
+                        >NuGet package integration and server-ready HMI
+                        content</strong
+                     >
+                  </div>
+               </div>
+            </div>
+            <div class="panel">
+               <h3>Engineering Impact</h3>
+               <ul class="check-list">
+                  <li>
+                     Eliminates repetitive HMI engineering tasks through
+                     automated generation.
+                  </li>
+                  <li>
+                     Creates standardized and reusable HMI components and User
+                     Controls.
+                  </li>
+                  <li>
+                     Reduces commissioning time and manual configuration errors.
+                  </li>
+                  <li>Ensures consistent PLC-to-HMI integration.</li>
+                  <li>
+                     Supports scalable deployment across large automation
+                     projects.
+                  </li>
+                  <li>
+                     Improves maintainability through modular,
+                     version-controlled assets.
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section id="functions" class="section">
+            <p class="eyebrow">Core Automation Modules</p>
+            <h2>Core Automation Modules</h2>
+            <div class="cards">
+               <article class="card">
+                  <div class="card-number">1</div>
+                  <h3>User Control Generator</h3>
+                  <p>
+                     Generates reusable TwinCAT HMI User Controls, dashboards,
+                     ADS bindings, and localization resources from PLC data
+                     types.
+                  </p>
+                  <ul class="plain-list">
+                     <li>Output: reusable ADS-ready HMI behavior modules</li>
+                     <li>
+                        Value: standardized dashboards generated from PLC
+                        structures
+                     </li>
+                     <li>
+                        Focus: reusable User Controls for the HMI NuGet package
+                     </li>
+                  </ul>
+               </article>
+               <article class="card">
+                  <div class="card-number">2</div>
+                  <h3>HMI Content Generator</h3>
+                  <p>
+                     Builds HMI content pages, project views, and device
+                     structures directly from PLC and project data.
+                  </p>
+                  <ul class="plain-list">
+                     <li>
+                        Output: TwinCAT HMI content pages and Desktop views
+                     </li>
+                     <li>
+                        Value: automated project setup with final ADS binding
+                     </li>
+                     <li>
+                        Focus: project validation, content generation, and
+                        publishing readiness
+                     </li>
+                  </ul>
+               </article>
+               <article class="card">
+                  <div class="card-number">3</div>
+                  <h3>Address Mapping Generator</h3>
+                  <p>
+                     Converts exported I/O data into TwinCAT-ready mapping code.
+                  </p>
+                  <ul class="plain-list">
+                     <li>Output: structured TwinCAT PLC assignment code</li>
+                     <li>
+                        Benefit: faster commissioning with fewer mapping errors
+                     </li>
+                     <li>Focus: Excel parsing and I/O mapping generation</li>
+                  </ul>
+               </article>
+            </div>
+         </section>
+         <section id="architecture" class="section grid-2">
+            <div class="panel dark">
+               <h2>System Architecture</h2>
+               <ol class="timeline">
+                  <li>
+                     Python launcher UI built with Tkinter coordinates the
+                     selected process and validates user input before execution.
+                  </li>
+                  <li>
+                     TwinCAT PLC project files are parsed to extract stations,
+                     variables, and device-related data types.
+                  </li>
+                  <li>
+                     TwinCAT HMI project files are updated with generated
+                     content and User Control assets.
+                  </li>
+                  <li>
+                     ADS communication is represented through generated
+                     .adsbinding files and TwinCAT HMI binding strings targeting
+                     PLC symbols.
+                  </li>
+                  <li>
+                     Logging, HTML help documentation, path management,
+                     validation, and exception handling are separated into
+                     common utility modules for maintainability.
+                  </li>
+               </ol>
+            </div>
+            <div>
+               <p class="eyebrow">Workflow Summary</p>
+               <h2>From PLC Data to HMI Assets</h2>
+               <ol class="timeline">
+                  <li>Select an automation function.</li>
+                  <li>
+                     The tool separates development-related and project-related
+                     workflows.
+                  </li>
+                  <li>
+                     The tool validates HMI project name, HMI project folder,
+                     .hmiproj file, PLC project path, and behavior-module device
+                     category when needed.
+                  </li>
+                  <li>
+                     PLC data is parsed and transformed into a reusable TwinCAT
+                     HMI NuGet package.
+                  </li>
+                  <li>
+                     Generated ADS binding strings connect components to PLC
+                     symbols for the final dynamic commissioning project.
+                  </li>
+               </ol>
+            </div>
+         </section>
+         <section id="twincat" class="section grid-2">
+            <div>
+               <p class="eyebrow">Technical Background</p>
+               <h2>Technical Expertise</h2>
+               <p class="lead">
+                  Demonstrates expertise in TwinCAT HMI development, PLC
+                  integration, ADS communication, and industrial automation
+                  workflows. The framework applies standardized engineering
+                  rules to automate repetitive development tasks and improve
+                  maintainability.
+               </p>
+               <div class="tags">
+                  <span class="tag">TwinCAT HMI</span
+                  ><span class="tag">TwinCAT PLC</span
+                  ><span class="tag">ADS Communication</span
+                  ><span class="tag">NuGet Package</span
+                  ><span class="tag">.hmiproj</span
+                  ><span class="tag">.adsbinding</span
+                  ><span class="tag">.usercontrol</span
+                  ><span class="tag">Framework</span
+                  ><span class="tag">Desktop.view</span
+                  ><span class="tag">JSTree</span
+                  ><span class="tag">Localization CSV</span
+                  ><span class="tag">PLC Structure Data Type Parsing</span
+                  ><span class="tag">I/O Mapping</span
+                  ><span class="tag">OpenCommissioning</span
+                  ><span class="tag">Unity</span>
+                  <span class="tag">Prefabs</span>
+                  <span class="tag">JavaScript</span>
+               </div>
+            </div>
+            <div class="panel">
+               <h3>Technical Highlights</h3>
+               <ul class="check-list">
+                  <li>
+                     Deep TwinCAT HMI workflow coverage: .hmiproj project
+                     updates, Content folder generation, Desktop.view creation,
+                     User Control Host references, .usercontrol metadata, and
+                     localization CSV updates.
+                  </li>
+                  <li>
+                     TwinCAT PLC integration: PLC project folder selection,
+                     structure parsing, station grouping, sensor list
+                     generation, and mapping of PLC structures to HMI
+                     presentation components.
+                  </li>
+                  <li>
+                     ADS communication concept: generates binding strings for
+                     target PLC symbol paths and replaces generic data-type
+                     placeholders with project-specific station, section, and
+                     variable references.
+                  </li>
+                  <li>
+                     Industrial data-type awareness: supports BMW GSC-Standard
+                     for Gen 6 battery production lines.
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section id="highlights" class="section assets-section">
+            <div class="section-heading centered">
+               <p class="eyebrow">Implementation Highlights</p>
+               <h2>Key Contributions</h2>
+               <p>
+                  Key implementation strengths and representative files from the
+                  project deliverables.
+               </p>
+            </div>
+            <div class="assets-layout">
+               <div class="panel assets-panel">
+                  <div class="panel-title">
+                     <h3>Implementation Strengths</h3>
+                  </div>
+                  <ul class="highlight-list">
+                     <li>
+                        <strong>Modular architecture:</strong> independent
+                        modules for HMI content, User Controls, and address
+                        mapping.
+                     </li>
+                     <li>
+                        <strong>Data transformation:</strong> converts PLC
+                        structures into HMI-ready assets.
+                     </li>
+                     <li>
+                        <strong>File generation:</strong> creates content, User
+                        Control, binding, view, and localization files.
+                     </li>
+                     <li>
+                        <strong>Robustness:</strong> validates project files,
+                        paths, inputs, logs, and error paths.
+                     </li>
+                     <li>
+                        <strong>Scalability:</strong> separates generation,
+                        localization, mapping, structure handling, and
+                        utilities.
+                     </li>
+                  </ul>
+               </div>
+               <div class="panel assets-panel">
+                  <div class="panel-title">
+                     <div>
+                        <h3>Core Project Components</h3>
+                        <p>
+                           Representative modules and outputs behind the
+                           automation framework.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="files-grid clean">
+                     <div class="file-card">
+                        <code
+                           >Functions/hmi_project/hmi_content_generator.py</code
+                        >
+                        <p>HMI content and ADS-binding generation.</p>
+                     </div>
+                     <div class="file-card">
+                        <code
+                           >Functions/usercontrol/usercontrol_generator.py</code
+                        >
+                        <p>
+                           User Control, dashboard, binding, and localization
+                           generation.
+                        </p>
+                     </div>
+
+                     <div class="file-card">
+                        <code>HMI_Structure/*</code>
+                        <p>Tree-view layout and sensor-list generation.</p>
+                     </div>
+                     <div class="file-card">
+                        <code>HTML_Block_Generator/*</code>
+                        <p>Dashboard and HTML block generation by data type.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="impact-bar">
+               <div class="impact-icon">💡</div>
+               <h3>Impact</h3>
+               <p>
+                  Reduced HMI engineering effort by automating content
+                  generation, PLC integration, and address mapping. The
+                  framework improves consistency, minimizes manual errors, and
+                  provides a scalable foundation for future automation projects.
+               </p>
+            </div>
+         </section>
+
+         <section id="experience" class="section experience-section">
+            <div class="section-heading centered">
+               <p class="eyebrow">Professional Experience</p>
+               <h2>Software Engineering Journey</h2>
+               <p>
+                  From industrial HMI development and PLC programming to virtual
+                  commissioning, and automation framework development.
+               </p>
+            </div>
+
+            <div class="journey-grid">
+               <article class="journey-card current">
+                  <div class="journey-topline">
+                     <div class="card-number">01</div>
+                     <span class="period">2019 – 2024</span>
+                  </div>
+                  <h3>Müller Apparatebau GmbH</h3>
+                  <p class="role">Software Engineer / Project Manager</p>
+                  <p>
+                     Designed and delivered industrial HMI and PLC solutions for
+                     sheet-finishing machine systems, combining software
+                     architecture design, communication interfaces, and
+                     development process support.
+                  </p>
+                  <ul class="plain-list">
+                     <li>
+                        Designed HMI system architecture, workflows, and data
+                        models.
+                     </li>
+                     <li>
+                        Developed industrial touch panel HMI using C++ and QML in Qt
+                        Creator.
+                     </li>
+                     <li>
+                        Defined OPC UA concepts for communication interface.
+                     </li>
+                     <li>
+                        Developed TwinCAT 3 PLC applications for sheet
+                        perforation and cutting machines.
+                     </li>
+                     <li>
+                        Managed GitLab-based source control, CI/CD workflows,
+                        and distributed team coordination.
+                     </li>
+                  </ul>
+                  <div class="tags compact-tags">
+                     <span class="tag">Qt/QML</span>
+                     <span class="tag">C++</span>
+                     <span class="tag">TwinCAT PLC</span>
+                     <span class="tag">OPC UA</span>
+                     <span class="tag">GitLab</span>
+                     <span class="tag">UAExpert</span>
+                     <a
+                        class="tag tag-external"
+                        href="https://helio-hmi.com/en/casestudies/mueller"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        HELIO ↗
+                     </a>
+
+                     <a
+                        class="tag tag-external"
+                        href="https://www.youtube.com/watch?v=H7DkLL8NObo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        DocuTrim 🎬
+                     </a>
+                  </div>
+               </article>
+
+               <article class="journey-card">
+                  <div class="journey-topline">
+                     <div class="card-number">02</div>
+                     <span class="period">2025 – Present</span>
+                  </div>
+                  <h3>BMW Group</h3>
+                  <p class="role">
+                     Software Engineer – Virtual Commissioning Development
+                  </p>
+                  <p>
+                     Develops virtual commissioning solutions that integrate
+                     Unity, TwinCAT PLC, TwinCAT HMI, standard behavior models,
+                     and Python for electric vehicle battery production systems.
+                  </p>
+                  <ul class="plain-list">
+                     <li>
+                        Built Unity prefabs for virtual commissioning modules
+                        and visualization solutions.
+                     </li>
+                     <li>
+                        Created TwinCAT HMI User Controls with automated HTML
+                        generation.
+                     </li>
+                     <li>
+                        Automated HMI assets, ADS bindings, and project screen
+                        contents with Python.
+                     </li>
+                     <li>
+                        Developed reusable TwinCAT PLC libraries and HMI
+                        framework package.
+                     </li>
+                     <li>Familiar with the Fe.screen-sim and TIA Portal.</li>
+                  </ul>
+                  <div class="tags compact-tags">
+                     <span class="tag">Unity</span>
+                     <span class="tag">TwinCAT HMI</span>
+                     <span class="tag">Python</span>
+                     <span class="tag">ADS</span>
+                     <span class="tag">C#</span>
+                     <span class="tag">JavaScript</span>
+                     <span class="tag">Open Commissioning</span>
+                  </div>
+               </article>
+
+               <article class="journey-card future">
+                  <div class="journey-topline">
+                     <div class="card-number">03</div>
+                     <span class="period">Future Focus</span>
+                  </div>
+                  <h3>Future Direction</h3>
+                  <p class="role">
+                     Industrial Automation & Digital Manufacturing
+                  </p>
+                  <p>
+                     Continue expanding toward scalable automation frameworks,
+                     virtual commissioning platforms, and AI-assisted
+                     engineering workflows for modern manufacturing.
+                  </p>
+                  <ul class="plain-list">
+                     <li>
+                        Industrial automation and virtual commissioning
+                        platforms.
+                     </li>
+                     <li>
+                        Development of automation frameworks for HMI and PLC
+                        engineering based on CODESYS.
+                     </li>
+                     <li>
+                        Software architecture for scalable manufacturing
+                        systems.
+                     </li>
+                     <li>
+                        AI-assisted engineering tools that accelerate design and
+                        validation processes.
+                     </li>
+                     <li>
+                        Provide technical project management leadership to
+                        streamline communication between stakeholders , customers and development teams.
+                     </li>
+                  </ul>
+                  <div class="tags compact-tags">
+                     <span class="tag">Virtual Commissioning</span>
+                     <span class="tag">Automation</span>
+                     <span class="tag">HTML</span>
+                     <span class="tag">AI</span>
+                     <span class="tag">3D Modeling</span>
+                     <span class="tag">Project Management</span>
+                  </div>
+               </article>
+            </div>
+
+            <div class="impact-bar journey-impact">
+               <div class="impact-icon">🚀</div>
+               <h3>From Machinery HMI to Virtual Commissioning</h3>
+               <p>
+                  Experienced in industrial automation, including HMI
+                  development, PLC programming, and Python-based automation for
+                  production systems.
+               </p>
+            </div>
+         </section>
+
+         <section id="digital-twin" class="section">
+            <div class="section-heading centered">
+               <p class="eyebrow">Personal Project</p>
+               <h2>Raspberry Pi Digital Twin</h2>
+               <p>
+                  An embedded Linux and 3D digital-twin system that links a
+                  Raspberry Pi, a cross-platform Qt app, a Blender scene, and a
+                  live web dashboard through MQTT.
+               </p>
+            </div>
+
+            <div class="cards">
+               <article class="card">
+                  <div class="card-number">1</div>
+                  <h3>Embedded Linux &amp; Hardware</h3>
+                  <p>
+                     Raspberry Pi 3B+ running Debian on ARM64, wired directly to
+                     macOS.
+                  </p>
+                  <ul class="plain-list">
+                     <li>Reads the CPU temperature and drives the on-board LED</li>
+                     <li>SSH, Raspberry Pi Connect, and Ethernet internet sharing</li>
+                  </ul>
+               </article>
+
+               <article class="card">
+                  <div class="card-number">2</div>
+                  <h3>Qt App &amp; Web Dashboard</h3>
+                  <p>
+                     Cross-platform Qt 6 Quick application in QML and C++, plus
+                     a live Python web dashboard.
+                  </p>
+                  <ul class="plain-list">
+                     <li>Runs on macOS and the Raspberry Pi (CMake, ARM64)</li>
+                     <li>Temperature history chart, 7-day weather forecast, and MQTT control</li>
+                  </ul>
+               </article>
+
+               <article class="card">
+                  <div class="card-number">3</div>
+                  <h3>Blender Digital Twin</h3>
+                  <p>
+                     A Python-scripted 3D scene that mirrors the live hardware
+                     state.
+                  </p>
+                  <ul class="plain-list">
+                     <li>Temperature-driven rotor, LED, and over-threshold alarm</li>
+                     <li>SQLite telemetry logging and replay</li>
+                  </ul>
+               </article>
+            </div>
+
+            <div class="tags">
+               <span class="tag">Raspberry Pi</span>
+               <span class="tag">Embedded Linux</span>
+               <span class="tag">Qt/QML</span>
+               <span class="tag">C++</span>
+               <span class="tag">MQTT</span>
+               <span class="tag">Blender</span>
+               <span class="tag">Python</span>
+               <span class="tag">SQLite</span>
+            </div>
+         </section>
+
+         <section id="pickline" class="section">
+            <div class="section-heading centered">
+               <p class="eyebrow">Personal Project</p>
+               <h2>PickLine — Pick, Convey &amp; Fill Digital Twin</h2>
+               <p>
+                  A complete industrial cell simulation that links a
+                  dual-gripper pick-and-place gantry, a scanner-routed conveyor
+                  with two filling stations, two independent outfeed lines with
+                  vertical lifts and palletizers, a quality gate with reject
+                  handling, a Qt HMI, a Blender 3D twin, a live production
+                  dashboard, and a standard OPC UA interface.
+               </p>
+            </div>
+
+            <div class="cards">
+               <article class="card">
+                  <div class="card-number">1</div>
+                  <h3>Plant Model &amp; Soft PLC</h3>
+                  <p>
+                     Python plant simulation and a state-machine soft PLC run
+                     as separate processes and communicate only over MQTT — the
+                     same boundary a real PLC has against a physical cell.
+                  </p>
+                  <ul class="plain-list">
+                     <li>
+                        Dual-gripper gantry picks two containers per trip; a
+                        belt scanner routes A straight and B left
+                     </li>
+                     <li>
+                        Pour-per-container logic: station A fills after 2
+                        containers, station B after 5 (both adjustable)
+                     </li>
+                     <li>
+                        Two independent lines: robot → outfeed → lift →
+                        palletizer (A stacks 4, B stacks 2)
+                     </li>
+                     <li>
+                        Quality gate with adjustable reject rate; rejects divert
+                        to a shared bin that halts the cell at 10 until manually
+                        cleared
+                     </li>
+                     <li>
+                        Pallet dispatch recorded to SQLite; pause, emergency
+                        stop, clear-belt, jam and overfill fault handling
+                     </li>
+                  </ul>
+               </article>
+
+               <article class="card">
+                  <div class="card-number">2</div>
+                  <h3>Qt HMI &amp; Blender 3D Twin</h3>
+                  <p>
+                     A cross-platform Qt 6 Quick HMI (QML + C++ + CMake) and a
+                     Python-scripted Blender scene that mirror the live cell
+                     state in real time.
+                  </p>
+                  <ul class="plain-list">
+                     <li>
+                        Live top-view HMI with fill tanks, sensors, two outfeeds,
+                        lifts, palletizer counters, and a reject bin
+                     </li>
+                     <li>
+                        Blender gantry, conveyor, two tending robots, two
+                        outfeeds, rising lifts, stacked pallets, and a safety
+                        fence with a door
+                     </li>
+                     <li>
+                        Light logic: green running, yellow pause, red emergency
+                        stop, blue when the reject bin or a station is full
+                     </li>
+                  </ul>
+               </article>
+
+               <article class="card">
+                  <div class="card-number">3</div>
+                  <h3>Dashboard, Historian &amp; OPC UA</h3>
+                  <p>
+                     A live web production dashboard, SQLite telemetry logging,
+                     and a standard OPC UA interface for industrial clients.
+                  </p>
+                  <ul class="plain-list">
+                     <li>
+                        Web dashboard with per-line fill bars, lift and pallet
+                        status, reject counters, history charts, and full remote
+                        control (Chart.js)
+                     </li>
+                     <li>
+                        SQLite historian for telemetry plus pallet dispatch
+                        events
+                     </li>
+                     <li>
+                        OPC UA server bridge exposing every tag to TwinCAT,
+                        CODESYS, UaExpert, and SCADA
+                     </li>
+                  </ul>
+               </article>
+            </div>
+
+            <div class="twin-gallery">
+               <figure class="twin-media">
+                  <img
+                     src="assets/pickline_hmi.png"
+                     alt="PickLine Qt HMI"
+                     loading="lazy"
+                  />
+                  <figcaption>
+                     Qt 6 Quick HMI — top-view cell with fill tanks, two
+                     outfeeds, lifts, palletizer counters, reject bin, and the
+                     signal tower.
+                  </figcaption>
+               </figure>
+               <figure class="twin-media">
+                  <img
+                     src="assets/pickline_3d.png"
+                     alt="PickLine Blender 3D twin"
+                     loading="lazy"
+                  />
+                  <figcaption>
+                     Blender 3D twin — gantry, conveyor, two filling stations,
+                     two robots, outfeeds, lifts, palletizers, and a safety
+                     fence.
+                  </figcaption>
+               </figure>
+               <figure class="twin-media wide">
+                  <img
+                     src="assets/pickline_3d.gif"
+                     alt="PickLine 3D simulation animation"
+                     loading="lazy"
+                  />
+                  <figcaption>
+                     Simulation animation — dual-gripper pick, scanner routing,
+                     convey, fill, and palletize cycle.
+                  </figcaption>
+               </figure>
+               <figure class="twin-media wide">
+                  <img
+                     src="assets/pickline_dashboard.png"
+                     alt="PickLine production dashboard"
+                     loading="lazy"
+                  />
+                  <figcaption>
+                     Live production dashboard — per-line fill bars, lift and
+                     pallet status, reject counters, history charts, and remote
+                     control.
+                  </figcaption>
+               </figure>
+            </div>
+
+            <div class="tags">
+               <span class="tag">Python</span>
+               <span class="tag">MQTT</span>
+               <span class="tag">Mosquitto</span>
+               <span class="tag">Qt/QML</span>
+               <span class="tag">C++</span>
+               <span class="tag">CMake</span>
+               <span class="tag">Blender</span>
+               <span class="tag">SQLite</span>
+               <span class="tag">OPC UA</span>
+               <span class="tag">Dual Gripper</span>
+               <span class="tag">Lift</span>
+               <span class="tag">Palletizer</span>
+               <span class="tag">Quality Gate</span>
+               <span class="tag">Safety Fence</span>
+               <span class="tag">JavaScript</span>
+               <span class="tag">Raspberry Pi</span>
+               <span class="tag">Embedded Linux</span>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer-inner">
+            <span>© <span id="year"></span> Xiaobo Jing</span>
+            <span>TwinCAT PLC / HMI Experiences Portfolio</span>
+         </div>
+      </footer>
+      <script src="assets/script.js" defer></script>
+   </body>
+</html>
